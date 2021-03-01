@@ -190,16 +190,29 @@ export default function Header() {
         >
           Suporte
         </S.ButtonStyle>
+        <S.ButtonStyle
+           component={Link}
+           to="/Services"
+        >
+          Serviços
+        </S.ButtonStyle>
         <S.LoginButton
           disableElevation
           variant="contained"
           size="small"
           startIcon={<Profile />}
+          component={Link}
+          to="/Login"
         >
           LOGIN
         </S.LoginButton>
         <S.VerticalDivider />
-        <S.RegistarButton disableElevation variant="contained" size="small">
+        <S.RegistarButton 
+          disableElevation 
+          variant="contained" 
+          size="small"
+          component={Link}
+          to="/Register">
           Registar
         </S.RegistarButton>
       </Toolbar>
